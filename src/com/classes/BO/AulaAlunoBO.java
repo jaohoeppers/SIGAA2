@@ -32,6 +32,10 @@ public class AulaAlunoBO {
         AulaAlunoDAO AulaAlunoDAO = new AulaAlunoDAO();
         return AulaAlunoDAO.procurarPorIdAluno(codigo);
     }
+    public AulaAluno procurarPorIdAulaIdAluno(int id_aula, int id_aluno){
+        AulaAlunoDAO AulaAlunoDAO = new AulaAlunoDAO();
+        return AulaAlunoDAO.procurarPorIdAulaIdAluno(id_aula, id_aluno);
+    }
     public List<AulaAluno> procurarPorIdAula(int codigo){
         AulaAlunoDAO AulaAlunoDAO = new AulaAlunoDAO();
         return AulaAlunoDAO.procurarPorIdAula(codigo);

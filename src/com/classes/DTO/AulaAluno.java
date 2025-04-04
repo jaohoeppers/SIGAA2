@@ -6,6 +6,7 @@ public class AulaAluno {
     Aula aula;
     Aluno aluno;
     Boolean presente;
+    Double nota;
 
     public AulaAluno(Aula aula, Aluno aluno, Boolean presente) {
         this.aula = aula;
@@ -13,7 +14,7 @@ public class AulaAluno {
         this.presente = presente;
     }
 
-    public AulaAluno(int codigo, Aula aula, Aluno aluno, Boolean presente) {
+    public AulaAluno(int codigo, Aula aula, Aluno aluno, Boolean presente, Double nota) {
         this.codigo = codigo;
         this.aula = aula;
         this.aluno = aluno;
@@ -50,5 +51,12 @@ public class AulaAluno {
 
     public void setCodigo(int codigo) {
         this.codigo = codigo;
+    }
+
+    public Double getNota() {
+        return nota;
+    }
+    public void setNota(Double nota) {
+        this.nota = nota;
     }
 }

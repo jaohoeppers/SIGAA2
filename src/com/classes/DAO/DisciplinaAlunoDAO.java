@@ -72,6 +72,24 @@ public class DisciplinaAlunoDAO {
              return false;
         }
     }
+    public boolean alterarStatus(DisciplinaAluno DisciplinaAluno, String status) {
+        try {
+            Connection conn = Conexao.conectar();
+            String sql = "UPDATE " + NOMEDATABELA + " SET status = ? WHERE id = ?;";
+            assert conn != null:
+                    "Connection is null. Check your database connection settings in the application properties file.";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, status);
+            ps.setInt(2, DisciplinaAluno.getCodigo());
+            ps.executeUpdate();
+            ps.close();
+            conn.close();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
     public DisciplinaAluno procurarPorCodigo(int codigo) {
         try {
             Connection conn = Conexao.conectar();
@@ -135,6 +153,31 @@ public class DisciplinaAlunoDAO {
             conn.close();
             return listObj;
         } catch (Exception e) {
+            return null;
+        }
+    }
+    public DisciplinaAluno procurarPorIdDisciplinaIdAluno(int idDisciplina, int idAluno) {
+        try {
+            Connection conn = Conexao.conectar();
+            String sql = "SELECT * FROM " + NOMEDATABELA + " WHERE (id_disciplina = ? AND id_aluno = ? );";
+            assert conn != null:
+                    "Connection is null. Check your database connection settings in the application properties file.";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, idDisciplina);
+            ps.setInt(2, idAluno);
+            ResultSet rs = ps.executeQuery();
+            rs.next();
+            DisciplinaAluno obj = new DisciplinaAluno(rs.getInt("id")
+                    , rs.getString("status")
+                    , alunoBO.procurarPorCodigo(rs.getInt("id_aluno"))
+                    , disciplinaBO.procurarPorCodigo(rs.getInt("id_disciplina")));
+
+            ps.close();
+            rs.close();
+            conn.close();
+            return obj;
+        } catch (Exception e) {
+            System.out.println("Erro ao procurar por idDisciplinaIdAluno: " + e.getMessage() );
             return null;
         }
     }

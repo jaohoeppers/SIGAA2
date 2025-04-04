@@ -23,6 +23,10 @@ public class DisciplinaAlunoBO {
         DisciplinaAlunoDAO DisciplinaAlunoDAO = new DisciplinaAlunoDAO();
         return DisciplinaAlunoDAO.excluir(DisciplinaAluno);
     }
+    public boolean alterarStatus(DisciplinaAluno DisciplinaAluno, String status){
+        DisciplinaAlunoDAO DisciplinaAlunoDAO = new DisciplinaAlunoDAO();
+        return DisciplinaAlunoDAO.alterarStatus(DisciplinaAluno, status);
+    }
     public DisciplinaAluno procurarPorCodigo(int codigo){
         DisciplinaAlunoDAO DisciplinaAlunoDAO = new DisciplinaAlunoDAO();
         return DisciplinaAlunoDAO.procurarPorCodigo(codigo);
@@ -34,6 +38,14 @@ public class DisciplinaAlunoBO {
     public List<DisciplinaAluno> procurarPorIdDisciplina(int idDisciplina){
         DisciplinaAlunoDAO DisciplinaAlunoDAO = new DisciplinaAlunoDAO();
         return DisciplinaAlunoDAO.procurarPorIdDisciplina(idDisciplina);
+    }
+    public DisciplinaAluno procurarPorIdDisciplinaIdAluno(int idDisciplina, int idAluno){
+        DisciplinaAlunoDAO DisciplinaAlunoDAO = new DisciplinaAlunoDAO();
+        return DisciplinaAlunoDAO.procurarPorIdDisciplinaIdAluno(idDisciplina, idAluno);
+    }
+    public List<DisciplinaAluno> procurarPorStatus(String status){
+        DisciplinaAlunoDAO DisciplinaAlunoDAO = new DisciplinaAlunoDAO();
+        return DisciplinaAlunoDAO.procurarPorStatus(status);
     }
     public boolean existeDisciplinaAluno(int idDisciplina, int idAluno){
         DisciplinaAlunoDAO DisciplinaAlunoDAO = new DisciplinaAlunoDAO();

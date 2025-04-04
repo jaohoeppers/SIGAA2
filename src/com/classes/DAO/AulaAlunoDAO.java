@@ -65,7 +65,7 @@ public class AulaAlunoDAO {
             assert conn != null:
                     "Connection is null. Check your database connection settings in the application properties file.";
             PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setBoolean(1, AulaAluno.getPresente());
+            ps.setBoolean(1, presente);
             ps.setInt(2, AulaAluno.getCodigo());
             ps.executeUpdate();
             ps.close();
@@ -106,7 +106,8 @@ public class AulaAlunoDAO {
                 AulaAluno obj = new AulaAluno(rs.getInt("id")
                         ,aulaBO.procurarPorCodigo(rs.getInt("id_aula"))
                         ,alunoBO.procurarPorCodigo(rs.getInt("id_aluno"))
-                        , rs.getBoolean("presente"));
+                        , rs.getBoolean("presente")
+                        , rs.getDouble("avaliacao"));
 //                obj.setCodigo(rs.getInt(1));
 //                obj.setDescricao(rs.getString(2));
                 ps.close();
@@ -161,6 +162,29 @@ public class AulaAlunoDAO {
             return null;
         }
     }
+    public AulaAluno procurarPorIdAulaIdAluno(int idAula, int idAluno) {
+        try {
+            Connection conn = Conexao.conectar();
+            String sql = "SELECT * FROM " + NOMEDATABELA + " WHERE (id_aula = ? AND id_aluno = ? );";
+            assert conn != null:
+                    "Connection is null. Check your database connection settings in the application properties file.";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, idAula);
+            ps.setInt(2, idAluno);
+            ResultSet rs = ps.executeQuery();
+            AulaAluno obj = new AulaAluno(rs.getInt("id")
+                    , aulaBO.procurarPorCodigo(rs.getInt("id_aula"))
+                    , alunoBO.procurarPorCodigo(rs.getInt("id_aluno"))
+                    , rs.getBoolean("presente")
+                    , rs.getDouble("avaliacao"));
+            ps.close();
+            rs.close();
+            conn.close();
+            return obj;
+        } catch (Exception e) {
+            return null;
+        }
+    }
 //    public boolean existeNome(String nome) {
 //        try {
 //            Connection conn = Conexao.conectar();
@@ -205,7 +229,8 @@ public class AulaAlunoDAO {
                 AulaAluno obj = new AulaAluno(rs.getInt("id")
                         ,aulaBO.procurarPorCodigo(rs.getInt("id_aula"))
                         ,alunoBO.procurarPorCodigo(rs.getInt("id_aluno"))
-                        , rs.getBoolean("presente"));
+                        , rs.getBoolean("presente")
+                        , rs.getDouble("avaliacao"));
                 listObj.add(obj);
             }
             return listObj;
