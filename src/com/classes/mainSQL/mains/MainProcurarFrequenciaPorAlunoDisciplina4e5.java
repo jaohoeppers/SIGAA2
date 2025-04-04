@@ -18,6 +18,7 @@ public class MainProcurarFrequenciaPorAlunoDisciplina4e5 {
 
 		for (AulaAluno aula : aulas) {
 			System.out.println("ID Aula: " + aula.getCodigo()
+			+ "\n	 Data: " + aula.getAula().getData()
 			+ "\n	 Disciplina: " + aula.getAula().getDisciplinaProfessor().getDisciplina().getNome()
 			+ "\n	 Professor: " + aula.getAula().getDisciplinaProfessor().getProfessor().getNome()
 			+ "\n 	 Presente: " + (aula.getPresente() ? "S" : "N")

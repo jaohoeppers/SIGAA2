@@ -1,7 +1,7 @@
 package com.classes.BO;
 
 import com.classes.DAO.ProfessorDAO;
-import com.classes.XML.Professor;
+import com.classes.DTO.Professor;
 
 import java.util.List;
 

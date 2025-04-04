@@ -1,25 +1,23 @@
 package com.classes.DTO;
 
-import com.classes.XML.Professor;
-
 public class DisciplinaProfessor {
 
     int codigo;
-    com.classes.XML.Professor professor;
+    Professor professor;
     Disciplina disciplina;
 
-    public DisciplinaProfessor(com.classes.XML.Professor professor, Disciplina disciplina) {
+    public DisciplinaProfessor(Professor professor, Disciplina disciplina) {
         this.professor = professor;
         this.disciplina = disciplina;
     }
 
-    public DisciplinaProfessor(int codigo, com.classes.XML.Professor professor, Disciplina disciplina) {
+    public DisciplinaProfessor(int codigo,Professor professor, Disciplina disciplina) {
         this.codigo = codigo;
         this.professor = professor;
         this.disciplina = disciplina;
     }
 
-    public com.classes.XML.Professor getProfessor() {
+    public Professor getProfessor() {
         return professor;
     }
 

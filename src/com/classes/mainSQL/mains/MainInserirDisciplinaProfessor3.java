@@ -5,7 +5,7 @@ import com.classes.BO.DisciplinaProfessorBO;
 import com.classes.BO.ProfessorBO;
 import com.classes.DTO.Disciplina;
 import com.classes.DTO.DisciplinaProfessor;
-import com.classes.XML.Professor;
+import com.classes.DTO.Professor;
 
 public class MainInserirDisciplinaProfessor3 {
 	public static void main(String[] args) {

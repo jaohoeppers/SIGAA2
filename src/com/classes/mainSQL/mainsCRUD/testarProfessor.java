@@ -1,7 +1,7 @@
 package com.classes.mainSQL.mainsCRUD;
 
 import com.classes.BO.ProfessorBO;
-import com.classes.XML.Professor;
+import com.classes.DTO.Professor;
 
 import java.util.List;
 

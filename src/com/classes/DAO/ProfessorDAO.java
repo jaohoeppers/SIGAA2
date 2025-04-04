@@ -1,7 +1,7 @@
 package com.classes.DAO;
 
 import com.classes.Conexao.Conexao;
-import com.classes.XML.Professor;
+import com.classes.DTO.Professor;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
