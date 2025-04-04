@@ -1,17 +1,18 @@
-package com.classes.main.mainsCRUD;
+package com.classes.mainSQL.mainsCRUD;
 
 import com.classes.BO.DisciplinaBO;
 import com.classes.BO.DisciplinaProfessorBO;
 import com.classes.BO.ProfessorBO;
 import com.classes.DTO.Disciplina;
 import com.classes.DTO.DisciplinaProfessor;
-import com.classes.DTO.Professor;
+import com.classes.XML.Professor;
 
 import java.util.List;
 
 public class testarDisciplinaProfessor {
 
-    private static void testarDisciplinaProfessorCRUD() {
+    public static void main(String[] args) {
+
         System.out.println("\n===== TESTE CRUD DISCIPLINA PROFESSOR =====");
         DisciplinaProfessorBO disciplinaProfessorBO = new DisciplinaProfessorBO();
         ProfessorBO professorBO = new ProfessorBO();

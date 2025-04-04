@@ -1,4 +1,4 @@
-package com.classes.main.inserir;
+package com.classes.mainSQL.inserir;
 
 import com.classes.BO.CursoBO;
 import com.classes.DTO.Curso;

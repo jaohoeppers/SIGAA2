@@ -1,7 +1,8 @@
-package com.classes.main.mains;
+package com.classes.mainSQL.mains;
 
 import com.classes.BO.*;
 import com.classes.DTO.*;
+import com.classes.XML.Professor;
 
 import java.time.Instant;
 import java.util.Date;
@@ -41,7 +42,7 @@ public class MainGerarAula {
 
 			// Buscar professores disponíveis para a disciplina escolhida
 			List<DisciplinaProfessor> disPro = disciplinaProfessorBO.procurarPorIdDisciplina(disciplinaSelecionada.getCodigo());
-			List<Professor> professores = disPro.stream()
+			List<com.classes.XML.Professor> professores = disPro.stream()
 					.map(DisciplinaProfessor::getProfessor)
 					.toList();
 

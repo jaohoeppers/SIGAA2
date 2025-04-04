@@ -1,4 +1,4 @@
-package com.classes.main.mainsCRUD;
+package com.classes.mainSQL.mainsCRUD;
 
 import com.classes.BO.CursoBO;
 import com.classes.BO.DisciplinaBO;
@@ -11,7 +11,8 @@ import java.util.List;
 
 public class testarDisciplina {
 
-    private static void testarDisciplina() {
+    public static void main(String[] args) {
+
         System.out.println("\n===== TESTE CRUD DISCIPLINA =====");
         DisciplinaBO disciplinaBO = new DisciplinaBO();
         FaseBO faseBO = new FaseBO();

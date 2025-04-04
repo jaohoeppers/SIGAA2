@@ -1,4 +1,4 @@
-package com.classes.main.mains;
+package com.classes.mainSQL.mains;
 
 import com.classes.BO.AlunoBO;
 import com.classes.DTO.Aluno;

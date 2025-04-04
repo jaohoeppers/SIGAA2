@@ -1,13 +1,14 @@
-package com.classes.main.mainsCRUD;
+package com.classes.mainSQL.mainsCRUD;
 
 import com.classes.BO.ProfessorBO;
-import com.classes.DTO.Professor;
+import com.classes.XML.Professor;
 
 import java.util.List;
 
 public class testarProfessor {
 
-    private static void testarProfessorCRUD() {
+    public static void main(String[] args) {
+
         System.out.println("\n===== TESTE CRUD PROFESSOR =====");
         ProfessorBO professorBO = new ProfessorBO();
 

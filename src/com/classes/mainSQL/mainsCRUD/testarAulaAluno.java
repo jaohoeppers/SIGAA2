@@ -1,4 +1,4 @@
-package com.classes.main.mainsCRUD;
+package com.classes.mainSQL.mainsCRUD;
 
 import com.classes.BO.AlunoBO;
 import com.classes.BO.AulaAlunoBO;
@@ -12,7 +12,8 @@ import java.util.List;
 
 public class testarAulaAluno {
 
-    private static void testarAulaAlunoCRUD() {
+    public static void main(String[] args) {
+
         System.out.println("\n===== TESTE CRUD AULA ALUNO =====");
         AulaAlunoBO aulaAlunoBO = new AulaAlunoBO();
         AulaBO aulaBO = new AulaBO();

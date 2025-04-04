@@ -1,8 +1,7 @@
-package com.classes.main.inserir;
+package com.classes.mainSQL.inserir;
 
-import com.classes.BO.CursoBO;
 import com.classes.BO.ProfessorBO;
-import com.classes.DTO.Professor;
+import com.classes.XML.Professor;
 
 public class MainInserirProfessores {
 	public static void main(String[] args) {

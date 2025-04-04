@@ -1,4 +1,4 @@
-package com.classes.main.inserir;
+package com.classes.mainSQL.inserir;
 
 import com.classes.BO.AulaBO;
 import com.classes.BO.DisciplinaBO;
@@ -9,7 +9,6 @@ import com.classes.DTO.DisciplinaProfessor;
 
 import java.time.Instant;
 import java.util.Date;
-import java.util.List;
 
 public class MainInserirAula {
 	public static void main(String[] args) {

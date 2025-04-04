@@ -1,10 +1,8 @@
-package com.classes.main.mainsCRUD;
+package com.classes.mainSQL.mainsCRUD;
 
 import com.classes.BO.AulaBO;
-import com.classes.BO.DisciplinaBO;
 import com.classes.BO.DisciplinaProfessorBO;
 import com.classes.DTO.Aula;
-import com.classes.DTO.Disciplina;
 import com.classes.DTO.DisciplinaProfessor;
 
 import java.util.Date;
@@ -12,7 +10,8 @@ import java.util.List;
 
 public class TestarAula {
 
-    private static void testarAulaCRUD() {
+    public static void main(String[] args) {
+
         System.out.println("\n===== TESTE CRUD AULA =====");
         AulaBO aulaBO = new AulaBO();
         DisciplinaProfessorBO disciplinaProfessorBO = new DisciplinaProfessorBO();

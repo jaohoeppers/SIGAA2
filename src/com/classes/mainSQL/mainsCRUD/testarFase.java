@@ -1,4 +1,4 @@
-package com.classes.main.mainsCRUD;
+package com.classes.mainSQL.mainsCRUD;
 
 import com.classes.BO.CursoBO;
 import com.classes.BO.FaseBO;
@@ -9,7 +9,8 @@ import java.util.List;
 
 public class testarFase {
 
-    private static void testarFase() {
+    public static void main(String[] args) {
+
         System.out.println("\n===== TESTE CRUD FASE =====");
         FaseBO faseBO = new FaseBO();
         CursoBO cursoBO = new CursoBO();

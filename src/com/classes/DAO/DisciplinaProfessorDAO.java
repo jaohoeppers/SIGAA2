@@ -3,9 +3,7 @@ package com.classes.DAO;
 import com.classes.BO.DisciplinaBO;
 import com.classes.BO.ProfessorBO;
 import com.classes.Conexao.Conexao;
-import com.classes.DTO.Disciplina;
 import com.classes.DTO.DisciplinaProfessor;
-import com.classes.DTO.Professor;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

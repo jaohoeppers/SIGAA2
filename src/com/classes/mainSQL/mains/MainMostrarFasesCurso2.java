@@ -1,4 +1,4 @@
-package com.classes.main.mains;
+package com.classes.mainSQL.mains;
 
 import com.classes.BO.CursoBO;
 import com.classes.BO.DisciplinaBO;

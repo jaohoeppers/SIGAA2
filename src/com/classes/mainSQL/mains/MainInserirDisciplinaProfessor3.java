@@ -1,13 +1,13 @@
-package com.classes.main.inserir;
+package com.classes.mainSQL.mains;
 
 import com.classes.BO.DisciplinaBO;
 import com.classes.BO.DisciplinaProfessorBO;
 import com.classes.BO.ProfessorBO;
-import com.classes.DTO.DisciplinaProfessor;
-import com.classes.DTO.Professor;
 import com.classes.DTO.Disciplina;
+import com.classes.DTO.DisciplinaProfessor;
+import com.classes.XML.Professor;
 
-public class MainInserirDisciplinaProfessor {
+public class MainInserirDisciplinaProfessor3 {
 	public static void main(String[] args) {
 
 		// Teste Inserir
