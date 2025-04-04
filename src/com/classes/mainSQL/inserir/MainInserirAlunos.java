@@ -16,22 +16,22 @@ public class MainInserirAlunos {
 		else
 			System.out.println("Erro ao Inserir");
 
-		aluno = new Aluno("Gian","654321","47997965874","testeee@gmail.com", curso);
-		if (alunoBO.inserir(aluno))
-			System.out.println("Inserido com Sucesso");
-		else
-			System.out.println("Erro ao Inserir");
-
-		aluno = new Aluno("Dezin","162534","54998756858","torto@gmail.com", curso);
-		if (alunoBO.inserir(aluno))
-			System.out.println("Inserido com Sucesso");
-		else
-			System.out.println("Erro ao Inserir");
-
-		aluno = new Aluno("Robertin","615243","47987848685","theblackguy@gmail.com", curso);
-		if (alunoBO.inserir(aluno))
-			System.out.println("Inserido com Sucesso");
-		else
-			System.out.println("Erro ao Inserir");
+//		aluno = new Aluno("Gian","654321","47997965874","testeee@gmail.com", curso);
+//		if (alunoBO.inserir(aluno))
+//			System.out.println("Inserido com Sucesso");
+//		else
+//			System.out.println("Erro ao Inserir");
+//
+//		aluno = new Aluno("Dezin","162534","54998756858","torto@gmail.com", curso);
+//		if (alunoBO.inserir(aluno))
+//			System.out.println("Inserido com Sucesso");
+//		else
+//			System.out.println("Erro ao Inserir");
+//
+//		aluno = new Aluno("Robertin","615243","47987848685","theblackguy@gmail.com", curso);
+//		if (alunoBO.inserir(aluno))
+//			System.out.println("Inserido com Sucesso");
+//		else
+//			System.out.println("Erro ao Inserir");
 	}
 }

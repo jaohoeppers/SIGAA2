@@ -25,44 +25,44 @@ public class MainInserirDiciplinaAluno {
 		else
 			System.out.println("Erro ao Inserir");
 
-		aluno = alunoBO.procurarPorNome("Dezin");
-		disciplina = disciplinaBO.procurarPorNome("POO2");
-		disciplinaAluno = new DisciplinaAluno("Ativo",aluno,disciplina);
-		if (disciplinaAlunoBO.inserir(disciplinaAluno))
-			System.out.println("Inserido com Sucesso");
-		else
-			System.out.println("Erro ao Inserir");
-
-		aluno = alunoBO.procurarPorNome("Dezin");
-		disciplina = disciplinaBO.procurarPorNome("Banco de Dados1");
-		disciplinaAluno = new DisciplinaAluno("Ativo",aluno,disciplina);
-		if (disciplinaAlunoBO.inserir(disciplinaAluno))
-			System.out.println("Inserido com Sucesso");
-		else
-			System.out.println("Erro ao Inserir");
-
-		aluno = alunoBO.procurarPorNome("Dezin");
-		disciplina = disciplinaBO.procurarPorNome("TCC");
-		disciplinaAluno = new DisciplinaAluno("Ativo",aluno,disciplina);
-		if (disciplinaAlunoBO.inserir(disciplinaAluno))
-			System.out.println("Inserido com Sucesso");
-		else
-			System.out.println("Erro ao Inserir");
-
-		aluno = alunoBO.procurarPorNome("Gian");
-		disciplina = disciplinaBO.procurarPorNome("TCC");
-		disciplinaAluno = new DisciplinaAluno("Ativo",aluno,disciplina);
-		if (disciplinaAlunoBO.inserir(disciplinaAluno))
-			System.out.println("Inserido com Sucesso");
-		else
-			System.out.println("Erro ao Inserir");
-
-		aluno = alunoBO.procurarPorNome("Gian");
-		disciplina = disciplinaBO.procurarPorNome("Algoritmos");
-		disciplinaAluno = new DisciplinaAluno("Ativo",aluno,disciplina);
-		if (disciplinaAlunoBO.inserir(disciplinaAluno))
-			System.out.println("Inserido com Sucesso");
-		else
-			System.out.println("Erro ao Inserir");
+//		aluno = alunoBO.procurarPorNome("Dezin");
+//		disciplina = disciplinaBO.procurarPorNome("POO2");
+//		disciplinaAluno = new DisciplinaAluno("Ativo",aluno,disciplina);
+//		if (disciplinaAlunoBO.inserir(disciplinaAluno))
+//			System.out.println("Inserido com Sucesso");
+//		else
+//			System.out.println("Erro ao Inserir");
+//
+//		aluno = alunoBO.procurarPorNome("Dezin");
+//		disciplina = disciplinaBO.procurarPorNome("Banco de Dados1");
+//		disciplinaAluno = new DisciplinaAluno("Ativo",aluno,disciplina);
+//		if (disciplinaAlunoBO.inserir(disciplinaAluno))
+//			System.out.println("Inserido com Sucesso");
+//		else
+//			System.out.println("Erro ao Inserir");
+//
+//		aluno = alunoBO.procurarPorNome("Dezin");
+//		disciplina = disciplinaBO.procurarPorNome("TCC");
+//		disciplinaAluno = new DisciplinaAluno("Ativo",aluno,disciplina);
+//		if (disciplinaAlunoBO.inserir(disciplinaAluno))
+//			System.out.println("Inserido com Sucesso");
+//		else
+//			System.out.println("Erro ao Inserir");
+//
+//		aluno = alunoBO.procurarPorNome("Gian");
+//		disciplina = disciplinaBO.procurarPorNome("TCC");
+//		disciplinaAluno = new DisciplinaAluno("Ativo",aluno,disciplina);
+//		if (disciplinaAlunoBO.inserir(disciplinaAluno))
+//			System.out.println("Inserido com Sucesso");
+//		else
+//			System.out.println("Erro ao Inserir");
+//
+//		aluno = alunoBO.procurarPorNome("Gian");
+//		disciplina = disciplinaBO.procurarPorNome("Algoritmos");
+//		disciplinaAluno = new DisciplinaAluno("Ativo",aluno,disciplina);
+//		if (disciplinaAlunoBO.inserir(disciplinaAluno))
+//			System.out.println("Inserido com Sucesso");
+//		else
+//			System.out.println("Erro ao Inserir");
 	}
 }
